@@ -53,12 +53,14 @@ button:hover {
 }
 
 .app-sidebar-notes {
-  height: calc(100vh - 78px);
+  height: calc(100vh - 100px);
   overflow-y: scroll;
+  border-radius: 10px;
 }
 .app-sidebar-note {
-  padding: 25px;
+  padding: 15px;
   cursor: pointer;
+  margin: 10px;
 }
 .sidebar-note-title {
   display: flex;
@@ -73,15 +75,17 @@ button:hover {
 .app-sidebar-note small {
   display: block;
   color: #999;
+  border-radius: 10px;
 }
 
 .app-sidebar-note:hover {
   background: #ddd;
+  border-radius: 10px;
 }
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: #08c;
-  color: white;
+  background: #ddd;
+  border-radius: 10px;
 }
 
 /* NOTE EDITOR/PREVIEW (MAIN) STYLES */
